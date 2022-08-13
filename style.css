@@ -256,4 +256,9 @@ footer .text {
     .cta-section {
         padding: 20px;
     }
+
+    .testimonials-section .testimonial-text:before,
+    .testimonials-section .testimonial-text:after {
+        content: "";
+    }
 }
