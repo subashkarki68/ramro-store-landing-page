@@ -259,6 +259,10 @@ footer .text {
 
     .testimonials-section .testimonial-text:before,
     .testimonials-section .testimonial-text:after {
-        content: "";
+        display: none;
+    }
+
+    .testimonials-section .author {
+        margin-right: 0;
     }
 }
