@@ -29,7 +29,7 @@ h1 {
 
 header {
     background-color: var(--dark-background-color);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 header * {
@@ -59,15 +59,16 @@ header svg {
     gap: 20px;
 }
 
-.hero-section * {
-    flex: 1;
-}
-
 .hero-section .content-section {
     display: flex;
     flex-flow: column nowrap;
-    flex: 1;
-    justify-content: flex-start;
+    justify-content: space-between;
+}
+
+.hero-section .content-section .hero-description {
+    margin: 60px 0;
+    font-size: 18px;
+    color: var(--athens-gray);
 }
 
 .hero-section .content-section .btn {
@@ -79,8 +80,8 @@ header svg {
     background-color: var(--dodger-blue);
     border: none;
     border-radius: 12px;
-    padding: 8px 32px;
-    font-size: 16px;
+    padding: 16px 64px;
+    font-size: 18px;
     cursor: pointer
 }
 
@@ -96,13 +97,8 @@ header svg {
     font-weight: 700;
 }
 
-.hero-section .content-section .hero-description {
-    font-size: 18px;
-    color: var(--athens-gray);
-}
-
 .hero-section .image-section img {
-    width: 100%;
+    max-width: 400px;
 
 }
 
@@ -154,4 +150,77 @@ header svg {
     max-width: 200px;
     text-align: center;
     padding: 0 10px;
+}
+
+/* Testimonials Section  */
+
+.testimonials-section {
+    margin-top: 100px;
+    background-color: var(--athens-gray);
+    padding: 60px;
+    text-align: center;
+}
+
+.testimonials-section .testimonial-text:before,
+.testimonials-section .testimonial-text:after {
+    font-size: 90px;
+    color: var(--dodger-blue);
+}
+
+.testimonials-section .testimonial-text:before {
+    content: open-quote;
+}
+
+.testimonials-section .testimonial-text:after {
+    content: close-quote;
+}
+
+.testimonials-section .testimonial-text {
+    font-size: 32px;
+}
+
+.testimonials-section .author {
+    font-weight: bold;
+    text-align: end;
+    margin-right: 90px;
+}
+
+/* Call to action section  */
+
+.cta-section {
+    margin: 100px 15%;
+    padding: 40px 90px 40px 90px;
+    background-color: var(--dodger-blue);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta-section .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-section .btn .cta-button {
+    border: none;
+    color: var(--white);
+    background: none;
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 8px 32px;
+    font-size: 18px;
+    cursor: pointer
+}
+
+/* footer section  */
+
+footer {
+    background-color: var(--dark-background-color);
+    color: white;
+    text-align: center;
+}
+
+footer .text {
+    padding: 30px;
 }
